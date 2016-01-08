@@ -2,7 +2,7 @@
 #include <linux/module.h>
 
 static int count=1;
-module_param(count,int,1);
+module_param(count,int,S_IRUGO);
 MODULE_PARM_DESC(count, "How many times the helloworld prints.");
 
 
